@@ -1,14 +1,14 @@
 # Object Oriented JavaScript Todos
 
- 
-## Learning Competencies 
+
+## Learning Competencies
 
 * Write a constructor that creates a `new TodoList` and `new Task` using JavaScript constructors and prototypical inheritance.
 * Implement an API in plain JavaScript
 
-## Summary 
+## Summary
 
-This challenge should be done entierly in the JavaScript console within the chrome developer tools. 
+This challenge should be done entierly in the JavaScript console within the chrome developer tools.
 
 This is part two of the [JavaScript Todos challenge](../javascript-todos)
 
@@ -53,7 +53,7 @@ groceryList.list();
 
 
 // This should remove the task from the todo list
-breadTask.remove();
+groceryList.remove(breadTask);
 
 groceryList.list();
 //> Task {id: 2, description: 'cheese', completed: false}
