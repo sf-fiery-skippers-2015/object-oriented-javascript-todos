@@ -1,16 +1,29 @@
 // var newTodoList = function() {
 // };  
 
+
+var Task = function(id, desc) {
+  this.id = id
+  this.description = desc;
+  this.completed = false;
+}
+
+Task.prototype.complete = function(){
+  this.completed = true;
+}
+
 var TodoList = function(){
-  this.collection = [];
+  this.tasks = [];
 };
 
-TodoList.prototype.add = function(item){
-  return this.collection.push(item);
+TodoList.prototype.add = function(name){
+  var id = (this.tasks.length)+1
+  var groceryItem = new Task(id, name);
+  return this.tasks.push(groceryItem);
 };
 
 TodoList.prototype.list = function(){
-  return this.collection;
+  return this.tasks;
 };
 
 
